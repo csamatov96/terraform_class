@@ -1,10 +1,9 @@
-resource "aws_s3_bucket" "b" { 
-  bucket = "${var.bucket}" 
+resource "aws_s3_bucket" "buckets3" { 
+  bucket = "my-tf-test-bucket-chyngyzkan" 
   acl    = "private" 
 
   tags = { 
-    Name        = "${var.bucket}" 
-
-   Environment = "Dev" 
+    Name        = "My bucket" 
+    Environment = "Dev" 
   } 
 } 
