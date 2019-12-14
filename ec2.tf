@@ -3,7 +3,10 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro" 
  
   vpc_security_group_ids = [aws_security_group.sec_group.id]
+
   associate_public_ip_address = "true" 
+
+  user_data = "${file("userdata_file")}"
 
   tags = { 
     Name = "HelloWorld" 
