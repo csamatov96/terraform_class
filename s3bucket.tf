@@ -1,9 +1,9 @@
-resource "aws_s3_bucket" "buckets3" { 
-  bucket = "${var.bucket}" 
+resource "aws_s3_bucket" "mybucket" { 
+  bucket = "${var.bucketvariable}" 
   acl    = "private" 
 
   tags = { 
-    Name        = "${var.bucket}" 
+    Name        = "${var.bucketvariable}" 
 
    Environment = "Dev" 
   } 
