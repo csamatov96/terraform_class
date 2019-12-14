@@ -1,5 +1,5 @@
 resource "aws_instance" "web" { 
-  ami           = "AMI_ID_HERE" 
+  ami           = "ami-01f14919ba412de34" 
   instance_type = "t2.micro" 
  
   security_groups = ["allow_ssh_and_awx"] 
