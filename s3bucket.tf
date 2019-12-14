@@ -1,15 +1,10 @@
-resource "aws_s3_bucket" "mybucket" { 
-  bucket = "${var.bucketvariable}" 
+resource "aws_s3_bucket" "b" { 
+  bucket = "${var.bucket}" 
   acl    = "private" 
 
   tags = { 
-    Name        = "${var.bucketvariable}" 
+    Name        = "${var.bucket}" 
 
    Environment = "Dev" 
   } 
-
-   versioning { 
-        enabled = true 
-  } 
-
 } 
