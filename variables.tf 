@@ -1,2 +1,5 @@
 variable "key_name" {} 
 variable  "key_name_location" {} 
+variable "zone_id" {} 
+
+variable "domain" {} 

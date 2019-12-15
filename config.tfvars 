@@ -1,2 +1,5 @@
 key_name= "deployer" 
 key_name_location = "~/.ssh/id_rsa.pub" 
+zone_id = "Z6XWWD56QDJWX" 
+
+domain = "instance.csamatov.net" 
